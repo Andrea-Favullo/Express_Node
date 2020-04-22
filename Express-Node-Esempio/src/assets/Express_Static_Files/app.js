@@ -13,13 +13,15 @@ const path = require('path');
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
-//pagina map-site
-app.get('/site-map', function (req, res) {
-    res.sendFile(path.join(__dirname, 'sitemap.html'));
-});
+
 //pagina about
 app.get('/about', function (req, res) {
     res.sendFile(path.join(__dirname, 'about.html'));
+});
+
+//pagina map-site
+app.get('/site-map', function (req, res) {
+    res.sendFile(path.join(__dirname, 'sitemap.html'));
 });
 
 //crea il server, quando apre la porta avvia la funzione di call-back
